@@ -1,0 +1,72 @@
+/* Bustub 系列外部容器样式 */
+.bustub-series {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bustub-series:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 标题样式 */
+.bustub-series h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 列表样式 */
+.bustub-series ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 列表项样式 */
+.bustub-series ul li {
+  margin: 15px 0;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.bustub-series ul li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 链接样式 */
+.bustub-series ul li a {
+  text-decoration: none;
+  color: #0078d7;
+  font-size: 18px;
+  font-weight: bold;
+  flex-grow: 1; /* 链接占据剩余空间 */
+}
+
+.bustub-series ul li a:hover {
+  color: #0056a6;
+  text-decoration: underline;
+}
+
+/* 图标样式（可选） */
+.bustub-series ul li::before {
+  content: "📘"; /* 添加图标 */
+  margin-right: 10px;
+  font-size: 20px;
+  color: #0078d7;
+  flex-shrink: 0;
+}
